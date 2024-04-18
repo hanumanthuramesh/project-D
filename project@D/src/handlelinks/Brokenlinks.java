@@ -40,39 +40,10 @@ public class Brokenlinks {
 				System.out.println(url+" "+ "is valid  link"  );
 			}
 			
+		}	
 			
 			
-			
-			
-		}
 		
-		
-	
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-		         
-   
-          
-       
-        
-        
 	}
  
 }
