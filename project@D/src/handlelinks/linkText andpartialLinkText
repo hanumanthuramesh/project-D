@@ -1,0 +1,26 @@
+package handlelinks;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Linktext {
+
+	public static void main(String[] args) throws InterruptedException {
+		// step1:To open and  set up google chrome driver
+				System.setProperty("webdriver.chrome.Driver", "C:\\Users\\USER\\Downloads\\Tools\\updated tools file\\chrome file path\\chromedriver.exe\\");
+				//step2:Object creation for chrome driver and local variable declaration
+				//if we use testNG or methods  we have to declaration in Global	
+						ChromeDriver driver= new ChromeDriver();
+						//step3: To maximize the window 
+						driver.manage().window().maximize();
+						//step4:Get the URL	
+						driver.get("https://www.amazon.in/");
+						Thread.sleep(1000);
+						// link Text 
+				//driver.findElement(By.linkText("Today's Deals")).click();
+				// partial link Text 
+				driver.findElement(By.partialLinkText("Deals")).click();	
+
+	}
+//covered thinks are the find linkText and partialLinkText
+}
