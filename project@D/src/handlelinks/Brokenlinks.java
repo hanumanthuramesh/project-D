@@ -29,7 +29,7 @@ public class Brokenlinks {
 			HttpURLConnection  httpcon =(HttpURLConnection)link.openConnection();
 			//Thread .sleep(3000);
 			httpcon.connect();
-			// now we capture the response code 
+			// now we capture the response code
 			      int rescode=httpcon.getResponseCode();// code should be above >=400 than ots brokenlink
 			if (rescode>=400) 
 			{
